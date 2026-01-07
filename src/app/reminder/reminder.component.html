@@ -1,0 +1,27 @@
+<div class="card">
+
+  <!-- RED LIVE CLOCK -->
+  <div class="top-time" (click)="fastForward()">
+    {{ currentTime | date:'HH:mm' }}
+    <span class="fast">⏩</span>
+  </div>
+
+  <!-- SCROLL LIST -->
+  <div class="list">
+    <div class="row" *ngFor="let r of reminders" [class.strike]="r.expired">
+      <span class="text">{{ r.text }}</span>
+      <span class="time">{{ r.time }}</span>
+    </div>
+  </div>
+
+  <!-- INPUT AREA -->
+  <div class="input-box">
+    <input type="text" placeholder="Enter reminder" #rem>
+    <input type="time" #time>
+  </div>
+
+  <button (click)="addReminder(rem.value, time.value)" class="btn">
+    Add Reminder
+  </button>
+
+</div>

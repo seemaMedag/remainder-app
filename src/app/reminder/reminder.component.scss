@@ -1,0 +1,77 @@
+.card {
+  width: 340px;
+  margin: auto;
+  margin-top: 40px;
+  background: #f4f4f4;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.top-time {
+  background: #ff4d4d;
+  color: #fff;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fast {
+  font-size: 20px;
+}
+
+.list {
+  height: 250px;
+  background: white;
+  margin-top: 15px;
+  border-radius: 6px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.text {
+  font-weight: 600;
+}
+
+.time {
+  opacity: 0.6;
+}
+
+.strike {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 6px;
+}
+
+input[type="time"] {
+  width: 27%;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #2c6bff;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 15px;
+}
